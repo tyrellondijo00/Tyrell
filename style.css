@@ -1,0 +1,388 @@
+/* navbar */
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    padding: .9rem;
+    background-color: darkgray;
+    font-size: 1.1em;
+    position: relative;
+    
+    
+}
+
+.navbar-nav{
+    align-items: center;
+    display: flex;
+}
+
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 25px;
+    background:  darkgray;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px darkgray;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: darkgray;
+    color: black;
+}
+
+
+form a {
+  display: none;
+  position: absolute;
+  top: 70px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: white;
+  text-align: center; 
+  width: 100%;
+}
+
+form:valid a {
+  display: block;
+}
+/* navbar */
+
+/* landing page */
+
+ #myCarousel1 .carousel-inner .carousel-item  {
+  height: 38rem;
+  background: darkgrey;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+
+ #myCarousel1 .carousel-inner .carousel-item .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 150px;
+}
+
+ #myCarousel1 h1 {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 3.2em;
+  color: white;
+  padding-bottom: 5px;
+}
+
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background:  rgb(70, 70, 70);
+    opacity: .7;
+    position: absolute;
+}
+/* landing page */
+
+/* about */
+.padding {
+    padding: 80px 0;
+}
+
+.padding img {
+    width: 100%;
+}
+
+.about h2, .services h1, .project-carousel h3, .projects h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+.about p, .services p, .project-carousel, .projects p {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600;
+    font-size: 1.15em;
+}
+.about #btn {
+    background:  darkgray;
+    height: 50px;
+    min-width: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+
+  .about .noselect, .projects .noselect, #myCarousel .noselect, #myCarousel1 .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+
+  .about a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    }
+  
+ .about #btn #circle, .projects #btn #circle, #myCarousel #btn #circle, #myCarousel1 #btn #circle{
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  
+  .about #btn:hover, .projects #btn:hover, #myCarousel #btn:hover, #myCarousel1 #btn:hover{
+    background: transparent;
+  }
+  
+  .about #btn:hover #circle, .projects #btn:hover #circle{
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+  }
+/* about */
+
+/* Services */
+.services .container-md, .projects .container-md {
+    text-align: center;
+}
+
+.services .bi{
+    font-size: 40px;
+}
+
+.services p {
+    font-size: 20px;
+}
+
+.services a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Services */
+
+/* Projects */
+
+.projects{
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  /* background-color: darkgray; */
+}
+
+.projects .container-fluid {
+  text-align: center;
+}
+
+.projects .container-fluid img{
+  height: 100%;
+}
+
+.projects h2 {
+  margin-top: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: black;
+}
+
+.projects p{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.11em;
+  font-weight: 600;
+  color: black;
+}
+
+.projects a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+}
+
+.projects #btn{
+  background: darkgray;
+  height: 50px;
+  min-width: 10px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.projects .container-fluid .row .col-12 .card{
+  background: white;
+}
+
+.projects .container-fluid .row .col-12 .card .row .col-md-7 .card-body .card-text{
+  font-size: 1.1em;
+  display: block;
+  text-align: start;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#myCarousel .carousel-inner .carousel-item {
+  height: 28rem;
+  background: darkgrey;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+#myCarousel .carousel-inner .carousel-item .container {
+  position: absolute;
+  bottom: 0;
+  left: 0.8;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+#myCarousel h1 {
+  margin-top: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 550;
+  font-size: 1.9em;
+  color: white;
+  padding-bottom: 5px;
+}
+
+#myCarousel p{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.11em;
+  font-weight: 600;
+  color: white;
+}
+
+#myCarousel a, #myCarousel1 a  {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+}
+
+#myCarousel #btn, #myCarousel1 #btn{
+  background: darkgray;
+  height: 50px;
+  min-width: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+ #myCarousel #btn:hover #circle, #myCarousel1 #btn:hover #circle{
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+}
+
+
+
+
+/* Projects */
+
+
+
+
+
+

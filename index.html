@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <script src="js/script.js"></script>
+    <!-- Bootstrap CSS -->
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+
+    <!--Buttons-->
+
+    <!--Buttons-->
+
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!--Icons-->
+
+    <title>SmartVision Test</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container-fluid">
+          <img
+            src="logo.png"
+            alt=""
+            width="50"
+            height="45"
+            class="d-inline-block"
+          />
+          <h2>SmartVision</h2>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto mx-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTS</a>
+              </li>
+              <li class="nav-item">
+                <form action="">
+                  <input type="search" required />
+                  <i class="fa fa-search"></i>
+                  <a href="javascript:void(0)" id="clear-btn">Clear</a>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!----Landing Page------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="landing-page">
+      <div id="myCarousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">  
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image:url(project.webp) ;">
+            <div class="color-overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <h1>                   
+                    A New Frontier In Research And Development
+                    <hr>
+                  </h1>
+  
+                  <div class="row">
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#scrollspyHeading1"><span class="noselect">Explore <i class="bi bi-binoculars"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#"><span class="noselect">Order Service <i class="bi bi-cart3"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item" style="background-image: url(landi.jpg);" >
+            <div class="color-overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <h1>                   
+                    A New Frontier In Research And Development
+                    <hr>
+                  </h1>
+  
+                  <div class="row">
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#scrollspyHeading1"><span class="noselect">Explore <i class="bi bi-binoculars"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#"><span class="noselect">Order Service <i class="bi bi-cart3"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(land.jpg);" >
+            <div class="color-overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <h1>                   
+                    A New Frontier In Research And Development
+                    <hr>
+                  </h1>
+  
+                  <div class="row">
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#scrollspyHeading1"><span class="noselect">Explore <i class="bi bi-binoculars"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 pbutton">
+                      <div id="btn">
+                        <a href="#"><span class="noselect">Order Service <i class="bi bi-cart3"></i></span></a>
+                        <div id="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----End of Landing Page------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <!-----About Section----------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <div class="about padding" id="scrollspyHeading1">
+        <div class="container-md">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="About.jpeg" alt="" />
+            </div>
+
+            <div class="col-md-6 text-center">
+              <h2>Smart Vision, The Leading Consultancy Firm In Somalia</h2>
+              <br />
+              <p class="lead">
+                We are driven by a passion to help our clients reach their
+                maximum potential in Somalia and the Horn of Africa. Since our
+                inception 10 years ago, Smart Vision has become an industry
+                leader in Somalia and Somaliland. We have gained an enviable
+                reputation by providing top-rated M&E and research services and
+                have expanded our support to include organizational capacity
+                building.
+              </p>
+              <div id="btn">
+                <a href="#"><span class="noselect">Read More</span></a>
+                <div id="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----End of about Section------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <!----Services------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="services padding" id="scrollspyHeading2">
+      <div class="container-md">
+        <h1>Our Services</h1>
+        <br />
+        <p class="lead">
+          We provide specialized support services and expertise aimed at adding
+          value and filling gaps in existing capacity. Our main areas of
+          expertise are stated below
+        </p>
+        <br />
+
+        <div class="row">
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-camera"></i>
+              <p>Monitoring & Project Supervision Support</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-pie-chart"></i>
+              <p>Third Party Monitoring</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-card-text"></i>
+              <p>Baseline And End-Line Surveys</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-graph-up"></i>
+              <p>Impact Evaluation</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-clipboard-data"></i>
+              <p>Midterm Reviews & End Of Project Evaluations</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-easel2"></i>
+              <p>Special Studies & Assessment</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-search"></i>
+              <p>Research</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-pencil-square"></i>
+              <p>Grant-Seeking Proposal & Report Writing</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-building"></i>
+              <p>
+                Capacity Building & Organizational Capacity Assessments (OCA)
+              </p></a
+            >
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-coin"></i>
+              <p>Auditing & Financial Accounting Management</p>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="">
+              <i class="bi bi-translate"></i>
+              <p>Translating, Proofreading, Editing & Website Design</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----End of Services sect------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <!----Projects------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <div class="projects padding" id="scrollspyHeading3">
+      <div class="container-md">
+        <h1>Projects</h1>
+        <br/>
+        <p class="lead">
+          We provide specialized support services and expertise aimed at adding
+          value and filling gaps in existing capacity. Our main areas of
+          expertise are stated below
+        </p>
+        <br/>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+
+                <div class="col-md-5">
+                  <img
+                    src="project.webp"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h2>
+                      Midterm evaluation of reducing economic and ecological
+                      vulnerability (REEVs) project in Sool and Sanaag regions.
+                    </h2>
+                    <hr />
+                    <br />
+                    <p>
+                      Over the past three years Save the Children Somaliland
+                      program has been implementing the Reduced Economic and
+                      Ecology Vulnerability (REEVs) project in Somaliland. a
+                      four-year project that is aimed at supporting drought
+                      effected and vulnerable households in target communities
+                      in Sool and Sanaag regions. The project focuses on
+                      sustainably improving community livelihoods through
+                      investing in transitional cash transfer support in the
+                      mode of both conditional and unconditional.
+                    </p>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="card-text">
+                          <small>Client: Save Our Children</small>
+                        </p>
+                        <p class="card-text">
+                          <small>Status: Ongoing</small>
+                        </p>
+                      </div>
+
+                      <div class="col-md-3 pbutton">
+                        <div id="btn">
+                          <a href="#"><span class="noselect">Read More</span></a>
+                          <div id="circle"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 pbutton">
+                        <div id="btn">
+                          <a href="#"
+                            ><span class="noselect">All Projects</span></a
+                          >
+                          <div id="circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url(land.jpg) ;">
+          <div class="color-overlay"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>
+                  Third part monitoring and verifications for REEVs program in
+                  Sool and Sanaag regions.
+                  <hr>
+                </h1>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text">
+                      Client: Save Our Children
+                    </p>
+                    <br />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">Read More</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">All Projects</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(landi.jpg);" >
+          <div class="color-overlay"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>Evaluation of Emergency Cash Transfer and Resilience <hr></h1>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text">
+                      Client: Candlelight
+                    </p>
+                    <br />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">Read More</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">All Projects</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(About.jpeg);">
+          <div class="color-overlay"></div> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>
+                  Monitoring and Evaluation Endline Survey for Garowe Intra City
+                  Roads RFP No: SO-GM-72049-CS-CQS.
+                  <hr>
+                </h1>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text">
+                      Client: The World Bank
+                    </p>
+                    <br />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">Read More</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pbutton">
+                    <div id="btn">
+                      <a href="#"><span class="noselect">All Projects</span></a>
+                      <div id="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!----End of Projects sect------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/029744d69a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

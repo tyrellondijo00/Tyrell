@@ -10,9 +10,7 @@ html, body{
     padding: .9rem;
     background-color: darkgray;
     font-size: 1.1em;
-    position: relative;
-    
-    
+        
 }
 
 .navbar-nav{
@@ -124,8 +122,8 @@ form:valid a {
  #myCarousel1 h1 {
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 3.2em;
+  font-weight: 1000;
+  font-size: 3.4em;
   color: white;
   padding-bottom: 5px;
 }
@@ -134,8 +132,8 @@ form:valid a {
 .color-overlay {
     width: 100%;
     height: 100%;
-    background:  rgb(70, 70, 70);
-    opacity: .7;
+    background:black;
+    opacity: .75;
     position: absolute;
 }
 /* landing page */
@@ -149,7 +147,7 @@ form:valid a {
     width: 100%;
 }
 
-.about h2, .services h1, .project-carousel h3, .projects h1 {
+.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
@@ -220,8 +218,12 @@ form:valid a {
 /* about */
 
 /* Services */
-.services .container-md, .projects .container-md {
+.services .container-md, .projects .container-md, .counter .container-md {
     text-align: center;
+}
+
+.services .container-md .row .col-md-3:hover{
+  transform: scale(1.1);
 }
 
 .services .bi{
@@ -381,6 +383,63 @@ form:valid a {
 
 /* Projects */
 
+/* project counter */
+.project-counter-wrp ul{
+  list-style-type: none;
+  display: flex
+}
+
+.project-counter-wrp ul li{
+  width: 33.33%;
+  height: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+.project-counter-wrp ul li:hover {
+  transform: scale(1.1);
+}
+
+.project-counter-wrp ul li:nth-child(1) {
+  background: rgb(118, 116, 116);
+}
+
+.project-counter-wrp ul li:nth-child(2) {
+  background: darkgray;
+}
+
+.project-counter-wrp ul li:nth-child(3) {
+  background: darkgray;
+}
+
+.project-counter-wrp ul li p.number {
+  font-size: 40px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.project-counter-wrp ul li p {
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+.project-counter-wrp ul li span {
+  width: 60px;
+  background: black;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-counter-wrp ul li i{
+  color: black;
+  font-size: 40px;
+  vertical-align: middle;
+}
+/* project counter */
 
 
 

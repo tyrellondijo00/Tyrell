@@ -147,12 +147,12 @@ form:valid a {
     width: 100%;
 }
 
-.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1 {
+.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
 
-.about p, .services p, .project-carousel, .projects p {
+.about p, .services p, .project-carousel, .projects p, .team p {
     font-family: 'Roboto', sans-serif; 
     font-weight: 600;
     font-size: 1.15em;
@@ -218,7 +218,7 @@ form:valid a {
 /* about */
 
 /* Services */
-.services .container-md, .projects .container-md, .counter .container-md {
+.services .container-md, .projects .container-md, .counter .container-md, .team .container-md {
     text-align: center;
 }
 
@@ -386,11 +386,11 @@ form:valid a {
 /* project counter */
 .project-counter-wrp ul{
   list-style-type: none;
-  display: flex
+  display: flex;
 }
 
 .project-counter-wrp ul li{
-  width: 33.33%;
+  width: 25%;
   height: 100%;
   padding: 30px 0px;
   text-align: center;
@@ -402,7 +402,7 @@ form:valid a {
 }
 
 .project-counter-wrp ul li:nth-child(1) {
-  background: rgb(118, 116, 116);
+  background: darkgray;
 }
 
 .project-counter-wrp ul li:nth-child(2) {
@@ -413,9 +413,13 @@ form:valid a {
   background: darkgray;
 }
 
+.project-counter-wrp ul li:nth-child(4) {
+  background: darkgray;
+}
+
+
 .project-counter-wrp ul li p.number {
-  font-size: 40px;
-  padding: 0;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -427,7 +431,7 @@ form:valid a {
 }
 
 .project-counter-wrp ul li span {
-  width: 60px;
+  width: 50%;
   background: black;
   height: 2px;
   display: block;
@@ -436,10 +440,14 @@ form:valid a {
 
 .project-counter-wrp ul li i{
   color: black;
-  font-size: 40px;
+  font-size: 35px;
   vertical-align: middle;
 }
 /* project counter */
+
+/* team cards */
+
+/* team cards */
 
 
 

@@ -4,6 +4,14 @@ html, body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navbar{
@@ -133,7 +141,7 @@ form:valid a {
     width: 100%;
     height: 100%;
     background:black;
-    opacity: .75;
+    opacity: .5;
     position: absolute;
 }
 /* landing page */
@@ -152,12 +160,12 @@ form:valid a {
     font-weight: 500;
 }
 
-.about p, .services p, .project-carousel, .projects p, .team p {
+.about p, .services p, .project-carousel, .projects p, .team p, .member p {
     font-family: 'Roboto', sans-serif; 
     font-weight: 600;
     font-size: 1.15em;
 }
-.about #btn {
+.about #btn, .member #btn {
     background:  darkgray;
     height: 50px;
     min-width: 10px;
@@ -177,7 +185,7 @@ form:valid a {
     padding-top: 5px;
   }
 
-  .about .noselect, .projects .noselect, #myCarousel .noselect, #myCarousel1 .noselect {
+  .about .noselect, .projects .noselect, #myCarousel .noselect, #myCarousel1 .noselect, .member .noselect {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
@@ -186,13 +194,13 @@ form:valid a {
               user-select: none;
   }
 
-  .about a {
+  .about a, .member a {
     text-decoration: none;
     color: black;
     position: absolute;
     }
   
- .about #btn #circle, .projects #btn #circle, #myCarousel #btn #circle, #myCarousel1 #btn #circle{
+ .about #btn #circle, .projects #btn #circle, #myCarousel #btn #circle, #myCarousel1 #btn #circle, .member #btn #circle{
     width: 5px;
     height: 5px;
     background: transparent;
@@ -204,11 +212,12 @@ form:valid a {
   }
   
   
-  .about #btn:hover, .projects #btn:hover, #myCarousel #btn:hover, #myCarousel1 #btn:hover{
+  .about #btn:hover, .projects #btn:hover, #myCarousel #btn:hover, #myCarousel1 #btn:hover, .member #btn:hover{
+    color: white;
     background: transparent;
   }
   
-  .about #btn:hover #circle, .projects #btn:hover #circle{
+  .about #btn:hover #circle, .projects #btn:hover #circle, .member #btn:hover #circle{
     height: 50px;
     width: 150px;
     left: 0;
@@ -226,6 +235,10 @@ form:valid a {
   transform: scale(1.1);
 }
 
+.services .container-md .row .col-md-3:hover a{
+  color: black;
+}
+
 .services .bi{
     font-size: 40px;
 }
@@ -235,7 +248,7 @@ form:valid a {
 }
 
 .services a{
-    color: black;
+    color: #696969;
     text-decoration: none;
 }
 
@@ -346,7 +359,7 @@ form:valid a {
 
 #myCarousel a, #myCarousel1 a  {
   text-decoration: none;
-  color: white;
+  color: black;
   position: absolute;
 }
 
@@ -370,84 +383,134 @@ form:valid a {
   padding-top: 5px;
 }
 
+#myCarousel #btn:hover a, #myCarousel1 #btn:hover a{
+  color: white;
+}
+
  #myCarousel #btn:hover #circle, #myCarousel1 #btn:hover #circle{
   height: 50px;
   width: 150px;
   left: 0;
   border-radius: 0;
   border-bottom: 2px solid white;
+  color: white;
 }
 
-
-
-
-/* Projects */
+/* counter */
+.counter {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+/* counter */
 
 /* project counter */
-.project-counter-wrp ul{
-  list-style-type: none;
-  display: flex;
+
+.fullWidth {
+  width: 100%;
+  display: table;
+  float: none;
+  padding: 0;
+  min-height: 1px;
+  height: 100%;
+  position: relative;
 }
 
-.project-counter-wrp ul li{
+
+.projectFactsWrap{
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#projectFacts .fullWidth{
+  padding: 0;
+}
+
+.projectFactsWrap .item{
   width: 25%;
   height: 100%;
-  padding: 30px 0px;
+  padding: 50px 0px;
   text-align: center;
-  transition: 0.2s linear;
 }
 
-.project-counter-wrp ul li:hover {
-  transform: scale(1.1);
+.projectFactsWrap .item:nth-child(1){
+  background: darkgrey;
 }
 
-.project-counter-wrp ul li:nth-child(1) {
-  background: darkgray;
+.projectFactsWrap .item:nth-child(2){
+  background: #7D7D7D;
 }
 
-.project-counter-wrp ul li:nth-child(2) {
-  background: darkgray;
+.projectFactsWrap .item:nth-child(3){
+  background: #9E9E9E;
 }
 
-.project-counter-wrp ul li:nth-child(3) {
-  background: darkgray;
+.projectFactsWrap .item:nth-child(4){
+  background: #696969;
 }
 
-.project-counter-wrp ul li:nth-child(4) {
-  background: darkgray;
-}
-
-
-.project-counter-wrp ul li p.number {
-  font-size: 35px;
+.projectFactsWrap .item p.number{
+  font-size: 40px;
+  padding: 0;
   font-weight: bold;
 }
 
-.project-counter-wrp ul li p {
+.projectFactsWrap .item p{
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
-.project-counter-wrp ul li span {
-  width: 50%;
+
+.projectFactsWrap .item span{
+  width: 60px;
   background: black;
   height: 2px;
   display: block;
   margin: 0 auto;
 }
 
-.project-counter-wrp ul li i{
-  color: black;
-  font-size: 35px;
+
+.projectFactsWrap .item i{
   vertical-align: middle;
+  font-size: 50px;
+  color: black;
+}
+
+
+.projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+  color: white;
+}
+
+.projectFactsWrap .item:hover span{
+  background: white;
+}
+
+@media (max-width: 786px){
+  .projectFactsWrap .item {
+     flex: 0 0 50%;
+  }
 }
 /* project counter */
 
-/* team cards */
+/* team */
+.member .row .col-md-4 .card .card-body{
+  text-align: center;
+}
 
-/* team cards */
+.member h4{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 500;
+}
+/* team */
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-$('.animated').appear(function(){
+$('.animated').show(function(){
     var el = $(this);
     var anim = el.data('animation');
     var animDelay = el.data('delay');
@@ -16,3 +16,4 @@ $('.animated').appear(function(){
         el.removeClass('out');
     }    
 },{accY: -150});  
+

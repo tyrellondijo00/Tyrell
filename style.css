@@ -27,7 +27,7 @@ html, body{
 }
 
 
-form{
+.navigation form{
     position: relative;
     top: 50%;
     left: 50%;
@@ -42,7 +42,7 @@ form{
     padding: 5px;
 }
 
-input{
+.navigation input{
     position: absolute;
     top: 0;
     left: 0;
@@ -72,25 +72,25 @@ input{
     transition: all 1s;
 }
 
-form:hover,
-form:valid{
+.navigation form:hover,
+.navigation form:valid{
     width: 200px;
     cursor: pointer;
 }
 
-form:hover input,
-form:valid input{
+.navigation form:hover input,
+.navigation form:valid input{
     display: block;
 }
 
-form:hover .fa,
-form:valid .fa{
+.navigation form:hover .fa,
+.navigation form:valid .fa{
     background: darkgray;
     color: black;
 }
 
 
-form a {
+.navigation form a {
   display: none;
   position: absolute;
   top: 70px;
@@ -103,7 +103,7 @@ form a {
   width: 100%;
 }
 
-form:valid a {
+.navigation form:valid a {
   display: block;
 }
 /* navbar */
@@ -155,12 +155,12 @@ form:valid a {
     width: 100%;
 }
 
-.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1 {
+.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1, .contact h1, .testimony-heading h1  {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
 
-.about p, .services p, .project-carousel, .projects p, .team p, .member p {
+.about p, .services p, .project-carousel, .projects p, .team p, .member p, .client-heading p, .contact-heading p, .contact p, .testimony-heading p {
     font-family: 'Roboto', sans-serif; 
     font-weight: 600;
     font-size: 1.15em;
@@ -227,7 +227,7 @@ form:valid a {
 /* about */
 
 /* Services */
-.services .container-md, .projects .container-md, .counter .container-md, .team .container-md, .gallery-heading .container-md, .client-heading .container-md {
+.services .container-md, .projects .container-md, .counter .container-md, .team .container-md, .gallery-heading .container-md, .client-heading .container-md, .contact .container-md, .testimony-heading .container-md {
     text-align: center;
 }
 
@@ -512,6 +512,7 @@ form:valid a {
 .client-heading{
   padding-bottom: 0;
 }
+
 .clients .row {
   overflow: hidden;
 }  
@@ -598,7 +599,7 @@ form:valid a {
 }
 
 .gallery .image{
-  width: 33.333333%;
+  width: 33.33%;
   overflow:hidden;
   height: fit-content;
   padding: 0;
@@ -631,6 +632,144 @@ form:valid a {
     }
 }
 /* gallery */
+
+/* contact */
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: darkgray;
+}
+
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+
+}
+
+.contact .container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,.contactForm .inputBox input:valid ~ span, .contactForm .inputBox textarea:focus ~ span, .contactForm .inputBox textarea:valid ~ span{
+  color: red;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px){
+  .contact{
+    padding: 5px;
+  }
+
+  .contact .container{
+    flex-direction: column;
+  }
+
+  .contact .container .contactInfo, .contact .container .contactForm{
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .container .contactInfo .box{
+    padding: 5px;
+  }
+
+}
+
+
+
+
+/* contact */
 
 
 

@@ -155,17 +155,15 @@ html, body{
     width: 100%;
 }
 
-.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1, .contact h1, .testimony-heading h1  {
+.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1, .contact h1, .testimony-heading h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
 }
 
 .about p, .services p, .project-carousel, .projects p, .team p, .member p, .client-heading p, .contact-heading p, .contact p, .testimony-heading p {
     font-family: 'Roboto', sans-serif; 
-    font-weight: 600;
     font-size: 1.15em;
 }
-.about #btn, .member #btn {
+.about #btn, .member #btn, .gallery .button1 #btn {
     background:  darkgray;
     height: 50px;
     min-width: 10px;
@@ -174,7 +172,6 @@ html, body{
     color: black;
     font-size: 20px;
     font-family: 'Roboto', sans-serif; 
-    font-weight: 600;
     position: relative;
     transition: 1s;
     -webkit-tap-highlight-color: transparent;
@@ -185,7 +182,7 @@ html, body{
     padding-top: 5px;
   }
 
-  .about .noselect, .projects .noselect, #myCarousel .noselect, #myCarousel1 .noselect, .member .noselect {
+  .about .noselect, .projects .noselect, #myCarousel .noselect, #myCarousel1 .noselect, .member .noselect, .gallery .button1 .noselect {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
@@ -194,13 +191,13 @@ html, body{
               user-select: none;
   }
 
-  .about a, .member a {
+  .about a, .member a, .gallery .button1 a {
     text-decoration: none;
     color: black;
     position: absolute;
     }
   
- .about #btn #circle, .projects #btn #circle, #myCarousel #btn #circle, #myCarousel1 #btn #circle, .member #btn #circle{
+ .about #btn #circle, .projects #btn #circle, #myCarousel #btn #circle, #myCarousel1 #btn #circle, .member #btn #circle, .gallery .button1 #btn #circle{
     width: 5px;
     height: 5px;
     background: transparent;
@@ -212,12 +209,12 @@ html, body{
   }
   
   
-  .about #btn:hover, .projects #btn:hover, #myCarousel #btn:hover, #myCarousel1 #btn:hover, .member #btn:hover{
+  .about #btn:hover, .projects #btn:hover, #myCarousel #btn:hover, #myCarousel1 #btn:hover, .member #btn:hover, .gallery .button1 #btn:hover{
     color: white;
     background: transparent;
   }
   
-  .about #btn:hover #circle, .projects #btn:hover #circle, .member #btn:hover #circle{
+  .about #btn:hover #circle, .projects #btn:hover #circle, .member #btn:hover #circle, .gallery .button1 #btn:hover #circle{
     height: 50px;
     width: 150px;
     left: 0;
@@ -275,7 +272,6 @@ html, body{
 .projects h2 {
   margin-top: 20px;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
   font-size: 1.6em;
   color: black;
 }
@@ -283,7 +279,6 @@ html, body{
 .projects p{
   font-family: 'Roboto', sans-serif; 
   font-size: 1.11em;
-  font-weight: 600;
   color: black;
 }
 
@@ -302,7 +297,6 @@ html, body{
   color: black;
   font-size: 20px;
   font-family: 'Roboto', sans-serif; 
-  font-weight: 600;
   position: relative;
   transition: 1s;
   -webkit-tap-highlight-color: transparent;
@@ -344,7 +338,6 @@ html, body{
 #myCarousel h1 {
   margin-top: 20px;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 550;
   font-size: 1.9em;
   color: white;
   padding-bottom: 5px;
@@ -353,7 +346,6 @@ html, body{
 #myCarousel p{
   font-family: 'Roboto', sans-serif; 
   font-size: 1.11em;
-  font-weight: 600;
   color: white;
 }
 
@@ -372,7 +364,6 @@ html, body{
   color: white;
   font-size: 20px;
   font-family: 'Roboto', sans-serif; 
-  font-weight: 600;
   position: relative;
   transition: 1s;
   -webkit-tap-highlight-color: transparent;
@@ -502,7 +493,7 @@ html, body{
   text-align: center;
 }
 
-.member h4{
+.member h4, .contactForm h2{
   font-family: 'Roboto', sans-serif; 
   font-weight: 500;
 }
@@ -633,6 +624,48 @@ html, body{
 }
 /* gallery */
 
+/* testimony */
+.testimonials .carousel{
+  height: 25rem;
+}
+.testimonials .carousel-inner img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid darkgray;
+  padding: 5px;
+}
+
+.testimonials span{
+  color: black;
+  padding-top: 15px;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 500
+}
+
+.testimonials h4{
+  font-family: 'Roboto', sans-serif; 
+}
+
+.testimonials p{
+  margin-left: 18%;
+  margin-right: 18%;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif; 
+}
+
+@media (max-width: 991px){
+  .testimonials p{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .testimonials .carousel{
+    height: 30rem;
+  }
+}
+/* testimony */
+
 /* contact */
 .contact{
   position: relative;
@@ -649,6 +682,10 @@ html, body{
   max-width: 800px;
   text-align: center;
 
+}
+
+.contact h2{
+  font-family: 'Roboto', sans-serif;  
 }
 
 .contact .container{
@@ -688,7 +725,11 @@ html, body{
   font-size: 16px;
   color: black;
   flex-direction: column;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.container .contactInfo .box .text p{
+  font-family: 'Roboto', sans-serif; 
 }
 
 .contactForm{
@@ -697,10 +738,6 @@ html, body{
   background: #fff;
 }
 
-.contactForm h2{
-  font-size: 30px;
-  font-weight: 500;
-}
 
 .contactForm .inputBox{
   position: relative;
@@ -712,6 +749,7 @@ html, body{
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif; 
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid black;
@@ -727,23 +765,24 @@ html, body{
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color: #696969;
 }
 
 .contactForm .inputBox input:focus ~ span,.contactForm .inputBox input:valid ~ span, .contactForm .inputBox textarea:focus ~ span, .contactForm .inputBox textarea:valid ~ span{
-  color: red;
+  color: black;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
 .contactForm .inputBox input[type="submit"]{
   width: 100px;
-  background: blue;
-  color: white;
+  background: darkgray;
+  color: black;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif; 
 }
 
 @media (max-width: 991px){
@@ -764,11 +803,11 @@ html, body{
     padding: 5px;
   }
 
+  .contact h1{
+    padding-top: 50px;  
+  }
+
 }
-
-
-
-
 /* contact */
 
 

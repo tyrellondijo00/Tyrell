@@ -253,7 +253,7 @@ html, body{
 
 /* Projects */
 
-.projects{
+.projects, .project-page{
   padding-top: 80px;
   padding-bottom: 30px;
   padding-left: 0;
@@ -261,7 +261,7 @@ html, body{
   /* background-color: darkgray; */
 }
 
-.projects .container-fluid {
+.projects .container-fluid, .project-page .container-fluid {
   text-align: center;
 }
 
@@ -269,20 +269,20 @@ html, body{
   height: 100%;
 }
 
-.projects h2 {
+.projects h2, .project-page h2{
   margin-top: 20px;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.6em;
   color: black;
 }
 
-.projects p{
+.projects p, .project-page p{
   font-family: 'Roboto', sans-serif; 
   font-size: 1.11em;
   color: black;
 }
 
-.projects a {
+.projects a, .project-page a {
   text-decoration: none;
   color: black;
   position: absolute;
@@ -307,11 +307,11 @@ html, body{
   padding-top: 5px;
 }
 
-.projects .container-fluid .row .col-12 .card{
+.projects .container-fluid .row .col-12 .card, .project-page .container-fluid .row .col-12 .card{
   background: white;
 }
 
-.projects .container-fluid .row .col-12 .card .row .col-md-7 .card-body .card-text{
+.projects .container-fluid .row .col-12 .card .row .col-md-7 .card-body .card-text, .project-page .container-fluid .row .col-12 .card .row .col-md-8 .card-body .card-text{
   font-size: 1.1em;
   display: block;
   text-align: start;
@@ -877,7 +877,6 @@ html, body{
 .main-timeline:before{
     content: "";
     width:1px;
-    background: #dbdbdb;
     position: absolute;
     top: 5.2%;
     left: 14.5%;
@@ -936,6 +935,105 @@ html, body{
 /* --------------------------------------------------------------------------------------------------------- */
 /* PAGINATION */
 /* ---------------------------------------------------------------------------------------------------------------------- */
+
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+[data-pagination] {
+  font-size: 8pt;
+  line-height: 1;
+  font-weight: 400;
+  font-family:  "Roboto", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  margin: 1em auto;
+  text-align: center;
+  transition: font-size .2s ease-in-out;
+}
+[data-pagination] ul {
+  list-style-type: none;
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+  padding: .5em;
+}
+[data-pagination] ul li {
+  display: inline-block;
+  font-size: 100%;
+  width: auto;
+  border-radius: 3px;
+}
+[data-pagination] > a {
+  font-size: 100%;
+}
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+  color: #696969;
+}
+
+[data-pagination] .current a:focus,
+[data-pagination] .current a:hover {
+  color: white;
+}
+
+[data-pagination] a {
+  color: black;
+  font-size: 100%;
+  padding: .7em;
+  text-decoration: none;
+}
+
+[data-pagination] li.current {
+  background: darkgray;
+}
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+@media (min-width: 350px) {
+  [data-pagination] {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 500px) {
+  [data-pagination] {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 700px) {
+  [data-pagination] {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 900px) {
+  [data-pagination] {
+    font-size: 16pt;
+  }
+}
+
+
+.project-page .container-fluid img{
+  height: 200px;
+  width: 200px;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 

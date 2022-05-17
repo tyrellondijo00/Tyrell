@@ -155,11 +155,11 @@ html, body{
     width: 100%;
 }
 
-.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1, .contact h1, .testimony-heading h1, .about-page-heading h1, .about-history-txt h1 {
+.about h2, .services h1, .project-carousel h3, .projects h1, .counter h1, .team h1, .gallery-heading h1, .client-heading h1, .contact h1, .testimony-heading h1, .about-page-heading h1, .about-history-txt h1, .profile h1 {
     font-family: 'Cormorant Garamond', serif;
 }
 
-.about p, .services p, .project-carousel, .projects p, .team p, .member p, .client-heading p, .contact-heading p, .contact p, .testimony-heading p, .about-history-txt p, .about-page-heading p {
+.about p, .services p, .project-carousel, .projects p, .team p, .member p, .client-heading p, .contact-heading p, .contact p, .testimony-heading p, .about-history-txt p, .about-page-heading p, .profile p {
     font-family: 'Roboto', sans-serif; 
     font-size: 1.15em;
 }
@@ -224,7 +224,7 @@ html, body{
 /* about */
 
 /* Services */
-.services .container-md, .projects .container-md, .counter .container-md, .team .container-md, .gallery-heading .container-md, .client-heading .container-md, .contact .container-md, .testimony-heading .container-md, .about-page-heading .container-md, .single-about-history2{
+.services .container-md, .projects .container-md, .counter .container-md, .team .container-md, .gallery-heading .container-md, .client-heading .container-md, .contact .container-md, .testimony-heading .container-md, .about-page-heading .container-md, .single-about-history2, .profile{
     text-align: center;
 }
 
@@ -317,6 +317,12 @@ html, body{
   text-align: start;
   color: black;
   margin-bottom: 5px;
+}
+
+@media (max-width: 991px){
+  .pbutton{
+    margin-bottom: 5px;
+  }
 }
 
 #myCarousel .carousel-inner .carousel-item {
@@ -1034,7 +1040,29 @@ html, body{
   justify-content: center;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* member profile page */
+/* ----------------------------------------------------------------------------------------------------- */
+.prof-pic{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.profile img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid black;
+  padding: 5px;
+}
 
+.profile h4{
+  font-family: 'Roboto', sans-serif; 
+}
 
-
+@media (max-width: 991px){
+  .profile img{
+    width: 150px;
+    height: 150px;
+  }
+}
 
